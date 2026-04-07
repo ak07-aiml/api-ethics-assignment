@@ -3,6 +3,8 @@ AIML Assignment
 -------------------------------------------------------------------------------------------------------
 #Task 1 — Classify & Handle PII
 #Classification + Action
+------------------------
+
 full_name	Direct --> PII	--> Drop	--> Directly identifies a person
 email	--> Direct PII	--> Drop	--> Unique identifier → high risk
 date_of_birth	--> Indirect PII	--> Mask (e.g., keep year only)	--> Can identify when combined
