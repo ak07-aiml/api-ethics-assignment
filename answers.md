@@ -6,11 +6,17 @@ AIML Assignment
 ------------------------
 
 full_name	Direct --> PII	--> Drop	--> Directly identifies a person
+
 email	--> Direct PII	--> Drop	--> Unique identifier → high risk
+
 date_of_birth	--> Indirect PII	--> Mask (e.g., keep year only)	--> Can identify when combined
+
 zip_code	--> Indirect PII	--> Mask (e.g., first 3 digits)	--> Location-based re-identification risk
+
 job_title	--> Non-PII	--> Keep	Useful for analysis
+
 diagnosis_notes	--> Sensitive PII	--> Pseudonymize	--> May contain identifiable + health info
+
 -------------------------------------------------------------------------------------------------------------
 #Task 2 - Ethical / TOS Violations
 
