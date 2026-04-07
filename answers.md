@@ -24,6 +24,7 @@ Violation 1: Hardcoded API Key
 ------------------------------
 Problem:
 API_KEY = "free_tier_key_abc123"
+
 •	Security risk 
 •	Violates best practices / API policies 
 
@@ -31,6 +32,7 @@ Fix:
 -----
 import os
 API_KEY = os.getenv("API_KEY")
+
 •	Store key in environment variable instead
 
 Violation 2: No Rate Limiting / Responsible Usage
@@ -38,6 +40,7 @@ Violation 2: No Rate Limiting / Responsible Usage
 Problem
 for page in range (1, 101):
     response = requests.get(...)
+    
 •	Sends 100 rapid requests 
 •	May violate API rate limits
 
